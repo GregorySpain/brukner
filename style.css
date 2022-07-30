@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://use.typekit.net/ixl8fje.css");
+
+/* 6b8093 */
+a {
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline;
+  color:#305134 !important;
+}
+
+.bg-paper {
+  background-image: url("images/paper2-3247x4599.jpg");
+}
+
+.bg-primary {
+  background-color: #305134 !important;
+  /* #124d18 */
+}
+
+.bg-green {
+  background-color: #305134 !important;
+}
+
+.bg-tan {
+  background-color: #ccc5b5;
+}
+
+.toggler-border {
+  border: 3px solid #305134 !important;
+}
+
+.dashed-border {
+  border-top: 4px dotted #305134;
+  border-bottom: 4px dotted #305134;
+}
+
+.dashed-border-end {
+  border-right: 4px dotted #305134;
+}
+
+.font-header {
+  font-family: 'shadows into light', sans-serif;
+  font-weight: 700;
+}
+
+.font-script {
+  font-family: 'shadows into light', sans-serif;
+  font-weight: 500;
+}
+
+.advent-med {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 500;
+}
+
+.text-tan {
+  color: #ccc5b5;
+}
+
+.text-green {
+  color:#305134;
+}
+
+.logo-link {
+  width: 225px;
+}
+
+.book-reg {
+  font-family: schoolbook,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.book-med {
+  font-family: schoolbook,serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.book-italic {
+  font-family: schoolbook,serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.book-bold {
+  font-family: schoolbook,serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bldg-pic {
+  width: 327px;
+}
+
+.squirrel-pic {
+  width: 150px;
+}
+
+.accordion-button:not(.collapsed) {
+  border: none !important;
+  color: #ccc5b5 !important;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("images/caret-down-fill.svg") !important;
+}
+
+.my-btn:hover, .my-btn:active {
+  background-color: #ccc5b5 !important;
+  color: #305134;
+  border: 2px solid #305134 !important;
+}
+
+a:hover {
+  color: #6b8093 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .dashed-border-end {
+    border-right: none;
+    border-top: 4px dotted #305134;
+  }
+}
