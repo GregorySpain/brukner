@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url("https://use.typekit.net/ixl8fje.css");
-
 /* 6b8093 */
-a {
-  text-decoration: none;
-}
-.active {
-  text-decoration: underline;
-  color:#305134 !important;
-}
 
+/*
+Gregory Spain
+Brukner Nature Center Stylesheet
+August 4, 2022
+*/
+
+/* Backgrounds */
 .bg-paper {
   background-image: url("images/paper2-3247x4599.jpg");
 }
@@ -28,46 +27,7 @@ a {
   background-color: #ccc5b5;
 }
 
-.toggler-border {
-  border: 3px solid #305134 !important;
-}
-
-.dashed-border {
-  border-top: 4px dotted #305134;
-  border-bottom: 4px dotted #305134;
-}
-
-.dashed-border-end {
-  border-right: 4px dotted #305134;
-}
-
-.font-header {
-  font-family: 'shadows into light', sans-serif;
-  font-weight: 700;
-}
-
-.font-script {
-  font-family: 'shadows into light', sans-serif;
-  font-weight: 500;
-}
-
-.advent-med {
-  font-family: 'Advent Pro', sans-serif;
-  font-weight: 500;
-}
-
-.text-tan {
-  color: #ccc5b5;
-}
-
-.text-green {
-  color:#305134;
-}
-
-.logo-link {
-  width: 225px;
-}
-
+/* Fonts */
 .book-reg {
   font-family: schoolbook,serif;
   font-weight: 400;
@@ -92,6 +52,61 @@ a {
   font-style: normal;
 }
 
+.font-header {
+  font-family: 'shadows into light', sans-serif;
+  font-weight: 700;
+}
+
+.font-script {
+  font-family: 'shadows into light', sans-serif;
+  font-weight: 500;
+}
+
+.text-tan {
+  color: #ccc5b5;
+}
+
+.text-green {
+  color:#305134;
+}
+
+.text-nav {
+  color: #ccc5b5 !important;
+}
+
+.text-blue {
+  color: #6b8093;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+  color:#305134 !important;
+}
+
+/* Borders */
+.toggler-border {
+  border: 3px solid #305134 !important;
+}
+
+.dashed-border {
+  border-top: 4px dotted #305134;
+  border-bottom: 4px dotted #305134;
+}
+
+.dashed-border-end {
+  border-right: none;
+  border-top: 4px dotted #305134;
+}
+
+/* Sizing */
+.logo-link {
+  width: 225px;
+}
+
 .bldg-pic {
   width: 327px;
 }
@@ -100,6 +115,13 @@ a {
   width: 150px;
 }
 
+.height-custom {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+/* Accordions */
 .accordion-button:not(.collapsed) {
   border: none !important;
   color: #ccc5b5 !important;
@@ -114,6 +136,7 @@ a {
   background-image: url("images/caret-down-fill.svg") !important;
 }
 
+/* Custom Buttons */
 .my-btn:hover, .my-btn:active {
   background-color: #ccc5b5 !important;
   color: #305134;
@@ -124,9 +147,13 @@ a:hover {
   color: #6b8093 !important;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) {
   .dashed-border-end {
-    border-right: none;
-    border-top: 4px dotted #305134;
+    border-right: 4px dotted #305134;
+    border-top: none;
+  }
+
+  .text-nav {
+    color: #305134 !important;
   }
 }

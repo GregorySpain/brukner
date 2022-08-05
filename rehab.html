@@ -7,7 +7,7 @@
   <meta name="author" content="Gregory Spain">
   <!--
     Gregory Spain
-    July 27, 2022
+    August 4, 2022
 
     Website redesign for Brukner Nature Center
     What to do if? Page
@@ -15,37 +15,45 @@
   <title>Brukner Nature Center-What to Do?</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
 </head>
-<body class="d-flex flex-column h-100">
-  <header class="bg-paper">
+<body class="d-flex flex-column h-100 bg-paper">
+  <header>
+    <div class="row justify-content-end px-0 me-3 py-3 d-lg-none">
+      <div class="col-2 col-md-1 px-0 me-0">
+        <button class="navbar-toggler ms-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <img src="images/list.svg" alt="open menu">
+        </button>
+      </div>
+    </div>
     <div class="container py-3">
       <div class="row text-center justify-content-center">
-        <a href="" class="logo-link"><img src="images/brukner-logo-225x225.png" alt="brukner nature center logo"></a>
+        <a href="index.html" class="logo-link"><img src="images/brukner-logo-225x225.png" alt="brukner nature center logo"></a>
       </div>
       <div class="row">
         <!-- Nav -->
         <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
-          <button class="navbar-toggler ms-2 border-0 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-            <img src="images/list.svg" alt="open menu">
-          </button>
-          <div class="offcanvas offcanvas-start bg-tan" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title font-header text-green" id="offcanvasNavbar2Label">Brukner Nature Center</h5>
-              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title font-header text-nav" id="offcanvasNavbar2Label">Brukner Nature Center</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body justify-content-center">
               <ul class="navbar-nav mb-2 mb-lg-0 dashed-border">
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link fs-3 font-header text-nav" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" href="visit.html">Visit</a>
+                  <a class="nav-link fs-3 font-header text-nav" href="visit.html">Visit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green active" href="rehab.html">Wildlife Rehab</a>
+                  <a class="nav-link fs-3 font-header text-nav active" href="rehab.html">Wildlife Rehab</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" href="support.html">Support Us</a>
+                  <a class="nav-link fs-3 font-header text-nav" href="support.html">Support Us</a>
                 </li>
               </ul>
             </div>
@@ -54,26 +62,26 @@
       </div>
     </div>
   </header>
-  <main class="flex-shrink-0 bg-paper">
+  <main class="flex-shrink-0">
     <div class="d-flex justify-content-center hero shadow"> <!-- Hero -->
       <img class="w-100" src="images/flowers1-1920x600.jpg" alt="flowers">
     </div> <!-- /Hero -->
     <div class="container py-3 mx-auto bg-paper">
       <div class="row py-3">
         <!-- Left Sidebar. collapses to bottom for <= md screens -->
-        <aside class="col-lg-2 order-3 order-lg-1 dashed-border-end">
+        <aside class="col-lg-2 order-3 order-lg-1 dashed-border-end pt-4">
           <div class="row py-3 ps-3">
-            <h3 class="book-bold text-green text-decoration-underline">Entry:</h3>
+            <h3 class="book-bold text-green">Entry:</h3>
             <p class="book-italic text-green">*includes trails and interpretive building</p>
             <p class="book-bold text-green">$2.50/person or $10/family</p>
             <p class="book-reg text-green">(parents or grandparents and their children or grandchildren under the age of 18)</p>
-            <h3 class="book-bold text-green text-decoration-underline">Hours:</h3>
+            <h3 class="book-bold text-green">Hours:</h3>
             <p class="book-italic text-green mb-0">Monday - Saturday:</p>
             <p class="book-bold text-green">9:00<em>am</em> - 4:00<em>pm</em></p>
             <p class="book-italic text-green mb-0">Sunday:</p>
             <p class="book-bold text-green">12:30<em>pm</em> - 4:00<em>pm</em></p>
             <p class="book-italic text-green">Trails open sunrise to sunset!</p>
-            <h4 class="book-bold text-green text-decoration-underline">Rehab Drop-Off:</h4>
+            <h3 class="book-bold text-green">Rehab Drop-Off:</h3>
             <p class="book-italic text-green mb-0">7 days a week:</p>
             <p class="book-bold text-green mb-0">10:00<em>am</em> - 12:00<em>pm</em></p>
             <p class="book-bold text-green">1:00<em>pm</em> - 4:00<em>pm</em></p>
@@ -81,20 +89,20 @@
           </div>
         </aside> <!-- /Left Sidebar -->
         <!-- Main Content -->
-        <div class="col-lg-6 order-1 order-lg-2">
+        <div class="col-lg-6 order-1 order-lg-2 pt-4">
           <div class="row">
             <h1 class="font-header text-green">What should you do if...</h1>
           </div>
           <!-- Card Row One -->
-          <div class="row py-3">
+          <div class="row pt-2">
             <!-- Card One -->
-            <div class="col-md-6 py-1">
+            <div class="col-md-6 py-2">
               <div class="card bg-green border-0 shadow">
-                <img src="images/baby_bird_181x135.jpg" class="card-img-top" alt="nest with baby birds">
+                <img src="images/baby_bird_181x135.jpg" class="card-img-top  height-custom" alt="nest with baby birds">
                 <div class="accordion accordian-flush" id="accordionOne">
                   <div class="accordion-item border-0">
                     <h2 class="accordion-header bg-green" id="headingOne">
-                      <button class="accordion-button bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <button class="accordion-button collapsed bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         A baby bird falls out of its nest?
                       </button>
                     </h2>
@@ -108,13 +116,13 @@
               </div>
             </div> <!-- /Card One -->
             <!-- Card Two -->
-            <div class="col-md-6 py-1">
+            <div class="col-md-6 py-2">
               <div class="card bg-green border-0 shadow">
-                <img src="images/baby_bunnies_191x127.jpg" class="card-img-top" alt="baby bunnies">
+                <img src="images/baby_bunnies_191x127.jpg" class="card-img-top height-custom" alt="baby bunnies">
                 <div class="accordion accordian-flush" id="accordionTwo">
                   <div class="accordion-item border-0">
                     <h2 class="accordion-header bg-green" id="headingTwo">
-                      <button class="accordion-button bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="accordion-button collapsed bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         A nest of baby bunnies is found?
                       </button>
                     </h2>
@@ -129,15 +137,15 @@
             </div> <!-- /Card Two -->
           </div> <!-- /Card Row One -->
           <!-- Card Row Two -->
-          <div class="row py-3">
+          <div class="row">
             <!-- Card Three -->
-            <div class="col-md-6">
+            <div class="col-md-6 py-2">
               <div class="card bg-green border-0 shadow">
-                <img src="images/baby_squirrel_191x127.jpg" class="card-img-top" alt="baby squirrel">
+                <img src="images/baby_squirrel_191x127.jpg" class="card-img-top height-custom" alt="baby squirrel">
                 <div class="accordion accordian-flush" id="accordionThree">
                   <div class="accordion-item border-0">
                     <h2 class="accordion-header bg-green" id="headingThree">
-                      <button class="accordion-button bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="accordion-button collapsed bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         A baby squirrel falls from its nest?
                       </button>
                     </h2>
@@ -151,13 +159,13 @@
               </div>
             </div> <!-- /Card Three -->
             <!-- Card Four -->
-            <div class="col-md-6">
+            <div class="col-md-6 py-2">
               <div class="card bg-green border-0 shadow">
-                <img src="images/robin_fledgling_181x147.jpg" class="card-img-top" alt="fledgling robin">
+                <img src="images/robin_fledgling_181x147.jpg" class="card-img-top height-custom" alt="fledgling robin">
                 <div class="accordion accordian-flush" id="accordionFour">
                   <div class="accordion-item border-0">
                     <h2 class="accordion-header bg-green" id="headingFour">
-                      <button class="accordion-button bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <button class="accordion-button collapsed bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         You find an uninjured bird unable to fly?
                       </button>
                     </h2>
@@ -172,15 +180,15 @@
             </div> <!-- /Card Four -->
           </div> <!-- /Card Row Two -->
           <!-- Card Row Three -->
-          <div class="row py-3">
+          <div class="row">
             <!-- Card Five -->
-            <div class="col-md-6">
+            <div class="col-md-6 py-2">
               <div class="card bg-green border-0 shadow">
-                <img src="images/baby_raccoons_181x136.jpg" class="card-img-top" alt="baby racccoons">
+                <img src="images/baby_raccoons_181x136.jpg" class="card-img-top height-custom" alt="baby racccoons">
                 <div class="accordion accordian-flush" id="accordionFive">
                   <div class="accordion-item border-0">
                     <h2 class="accordion-header bg-green" id="headingFive">
-                      <button class="accordion-button bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <button class="accordion-button collapsed bg-green border-0 book-bold text-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         You discover a litter of young raccoons?
                       </button>
                     </h2>
@@ -194,46 +202,46 @@
               </div>
             </div> <!-- /Card Five -->
           </div> <!-- /Card Row Three -->
-          <div class="row py-3 justify-content-center">
+          <div class="row py-5 justify-content-center">
             <h3 class="font-header text-green">Watch our wildlife rehabilitation video!</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmuJDIlQrmQ" title="Brukner nature center rehabilitation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="pt-3" width="560" height="315" src="https://www.youtube.com/embed/ZmuJDIlQrmQ" title="Brukner nature center rehabilitation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div> <!-- /Main Content -->
         <!-- Right Sidebar collapses to middle on <= md screens -->
-        <div class="col-lg-3 order-2 order-lg-3 py-3">
+        <div class="col-lg-3 order-2 order-lg-3 py-4">
           <div class="row justify-content-center">
-            <h2 class="font-header text-green text-decoration-underline">Current Events:</h2>
+            <h2 class="font-header text-green dashed-border">Current Events:</h2>
           </div>
-            <div class="row py-3 justify-content-center">
-              <!-- Exhibit Card -->
-              <div class="col-md-6 col-lg-12 pb-2 mb-2">
-                <div class="card bg-green border-0 shadow">
-                  <img src="images/zebraswallowtail-90x91.jpg" class="card-img-top" alt="zebra swallowtail butterfly on a flower">
-                  <div class="card-body">
-                    <h5 class="card-title book-bold text-tan">Summer Art Exhibit:</h5>
-                    <h6 class="card-subtitle mb-2 font-script text-tan">&#8220;The Magic of Spring&#8221;</h6>
-                    <p class="book-italic text-tan">by Nora Steele</p>
-                    <p class="book-reg text-tan"><strong>Runs through Sun., Sept. 18<sup>th</sup></strong></p>
-                    <p class="card-text book-reg text-tan">Nora is a Naturalist for Wahkeena Nature Preserve and uses her illustration and photography to educate about the natural world. Her amazing art will be on sale and ready for pick-up at the end of the show. Proceeds will support the Wildlife Ambassador program at BNC.</p>
-                  </div>
+          <div class="row py-3 justify-content-center">
+            <!-- Exhibit Card -->
+            <div class="col-md-6 col-lg-12 py-3 mb-2">
+              <div class="card bg-green border-0 shadow">
+                <img src="images/zebraswallowtail-90x91.jpg" class="card-img-top" alt="zebra swallowtail butterfly on a flower">
+                <div class="card-body">
+                  <h5 class="card-title book-bold text-tan">Summer Art Exhibit:</h5>
+                  <h6 class="card-subtitle mb-2 font-script text-tan">&#8220;The Magic of Spring&#8221;</h6>
+                  <p class="book-italic text-tan">by Nora Steele</p>
+                  <p class="book-reg text-tan"><strong>Runs through Sun., Sept. 18<sup>th</sup></strong></p>
+                  <p class="card-text book-reg text-tan">Nora is a Naturalist for Wahkeena Nature Preserve and uses her illustration and photography to educate about the natural world. Her amazing art will be on sale and ready for pick-up at the end of the show. Proceeds will support the Wildlife Ambassador program at BNC.</p>
                 </div>
-              </div><!-- /Exhibit Card -->
-              <!-- Shop Card -->
-              <div class="col-md-6 col-lg-12">
-                <div class="card bg-green border-0 shadow">
-                  <img src="images/liliannicholsearrings2-50x59.jpg" class="card-img-top" alt="lilian nichols earrings">
-                  <div class="card-body">
-                    <h5 class="card-title book-bold text-tan">Featured Nature Shop Item:</h5>
-                    <h6 class="card-subtitle mb-2 font-script text-tan">Polymer Clay Jewelry</h6>
-                    <p class="book-italic text-tan">by Lilian Nichols</p>
-                    <p class="card-text book-reg text-tan">The artist of the month is Lilian Nichols, who works with polymer clay to make all sorts of jewelry &mdash; earrings, necklaces and other items.</p>
-                    <p class="card-text book-reg text-tan"> For her, polymer clay is like three dimensional paints &mdash; a perfect combination of her first two loves &mdash; painting and ceramics. Always a nature lover, her art is inspired by colors, forms and patterns found in the natural world, sometimes with a touch of whimsy. She has been working in polymer clay for about thirty years, and also teaches, spreading the fun!</p>
-                    <p class="book-reg text-tan"><strong>Jewelry prices range $15 &mdash; $45</strong></p>
-                    <p class="book-italic text-tan">*A percentage of all sales will be donated back to BNC</p>
-                  </div>
+              </div>
+            </div><!-- /Exhibit Card -->
+            <!-- Shop Card -->
+            <div class="col-md-6 col-lg-12 pt-3">
+              <div class="card bg-green border-0 shadow">
+                <img src="images/liliannicholsearrings2-50x59.jpg" class="card-img-top" alt="lilian nichols earrings">
+                <div class="card-body">
+                  <h5 class="card-title book-bold text-tan">Featured Nature Shop Item:</h5>
+                  <h6 class="card-subtitle mb-2 font-script text-tan">Polymer Clay Jewelry</h6>
+                  <p class="book-italic text-tan">by Lilian Nichols</p>
+                  <p class="card-text book-reg text-tan">The artist of the month is Lilian Nichols, who works with polymer clay to make all sorts of jewelry &mdash; earrings, necklaces and other items.</p>
+                  <p class="card-text book-reg text-tan"> For her, polymer clay is like three dimensional paints &mdash; a perfect combination of her first two loves &mdash; painting and ceramics. Always a nature lover, her art is inspired by colors, forms and patterns found in the natural world, sometimes with a touch of whimsy. She has been working in polymer clay for about thirty years, and also teaches, spreading the fun!</p>
+                  <p class="book-reg text-tan"><strong>Jewelry prices range $15 &mdash; $45</strong></p>
+                  <p class="book-italic text-tan">*A percentage of all sales will be donated back to BNC</p>
                 </div>
-              </div> <!-- /Shop Card -->
-            </div>              
+              </div>
+            </div> <!-- /Shop Card -->
+          </div>              
         </div> <!-- /Right Sidebar-->
       </div>
     </div>
@@ -243,18 +251,18 @@
       <div class="container text-center">
         <ul class="nav justify-content-center py-3">
           <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/BruknerNatureCenter/"><img src="images/facebook.svg" height="24" alt="facebook icon"></a>
+            <a class="nav-link" href="https://www.facebook.com/BruknerNatureCenter/" target="_blank"><img src="images/facebook.svg" height="24" alt="facebook icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/bruknernaturecenter/"><img src="images/instagram.svg" height="24" alt="instagram icon"></a>
+            <a class="nav-link" href="https://www.instagram.com/bruknernaturecenter/" target="_blank"><img src="images/instagram.svg" height="24" alt="instagram icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://youtu.be/PB3kLwRZ0P8"><img src="images/youtube.svg" height="24" alt="instagram icon"></a>
+            <a class="nav-link" href="https://youtu.be/PB3kLwRZ0P8" target="_blank"><img src="images/youtube.svg" height="24" alt="instagram icon"></a>
           </li>
         </ul>
-        <a class="nav-link" href="https://goo.gl/maps/n7mRqRUQbMf74MYV9"><img src="images/geo-alt-fill.svg" height="24" alt="open google maps"></a>
-        <p class="book-reg text-tan pt-2">5995 Horseshoe Bend Rd · Troy, OH · (937) 698-6493 · info@bruknernaturecenter.com</p>
-        <p class="font-script text-tan">Bruckner Nature Center &copy;2022 Design by: Gregory Spain</p>
+        <a class="nav-link" href="https://goo.gl/maps/n7mRqRUQbMf74MYV9" target="_blank"><img src="images/geo-alt-fill.svg" height="24" alt="open google maps"></a>
+        <p class="book-reg text-tan pt-2">5995 Horseshoe Bend Rd · Troy, OH · <a class="text-tan" href="tel:9376986493">(937) 698-6493</a> · <a class="text-tan" href="mailto: info@bruknernaturecenter.com">info@bruknernaturecenter.com</a></p>
+        <p class="font-script text-tan">Brukner Nature Center &copy;2022 Design by: Gregory Spain</p>
       </div>
     </footer> <!-- /Footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  

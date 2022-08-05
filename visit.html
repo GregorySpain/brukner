@@ -7,7 +7,7 @@
   <meta name="author" content="Gregory Spain">
   <!--
     Gregory Spain
-    July 27, 2022
+    August 4, 2022
 
     Website redesign for Brukner Nature Center
     Visit Page
@@ -15,37 +15,45 @@
   <title>Brukner Nature Center-Visit Us</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body class="d-flex flex-column h-100 bg-paper">
   <header>
+    <div class="row justify-content-end px-0 me-3 py-3 d-lg-none">
+      <div class="col-2 col-md-1 px-0 me-0">
+        <button class="navbar-toggler ms-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <img src="images/list.svg" alt="open menu">
+        </button>
+      </div>
+    </div>
     <div class="container py-3">
       <div class="row text-center justify-content-center">
-        <a href="" class="logo-link"><img src="images/brukner-logo-225x225.png" alt="brukner nature center logo"></a>
+        <a href="index.html" class="logo-link"><img src="images/brukner-logo-225x225.png" alt="brukner nature center logo"></a>
       </div>
       <div class="row">
         <!-- Nav -->
         <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
-          <button class="navbar-toggler ms-2 border-0 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-            <img src="images/list.svg" alt="open menu">
-          </button>
-          <div class="offcanvas offcanvas-start bg-tan" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title font-header text-green" id="offcanvasNavbar2Label">Brukner Nature Center</h5>
-              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title font-header text-nav" id="offcanvasNavbar2Label">Brukner Nature Center</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body justify-content-center">
               <ul class="navbar-nav mb-2 mb-lg-0 dashed-border">
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link fs-3 font-header text-nav" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green active" href="visit.html">Visit</a>
+                  <a class="nav-link fs-3 font-header text-nav active" href="visit.html">Visit</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" href="rehab.html">Wildlife Rehab</a>
+                  <a class="nav-link fs-3 font-header text-nav" href="rehab.html">Wildlife Rehab</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-3 font-header text-green" href="support.html">Support Us</a>
+                  <a class="nav-link fs-3 font-header text-nav" href="support.html">Support Us</a>
                 </li>
               </ul>
             </div>
@@ -61,19 +69,19 @@
     <div class="container py-3 mx-auto">
       <div class="row">
         <!-- Left Sidebar. collapses to bottom for <= md screens -->
-        <aside class="col-lg-2 order-3 order-lg-1 dashed-border-end">
+        <aside class="col-lg-2 order-3 order-lg-1 dashed-border-end pt-4">
           <div class="row py-3 ps-3">
-            <h3 class="book-bold text-green text-decoration-underline">Entry:</h3>
+            <h3 class="book-bold text-green">Entry:</h3>
             <p class="book-italic text-green">*includes trails and interpretive building</p>
             <p class="book-bold text-green">$2.50/person or $10/family</p>
             <p class="book-reg text-green">(parents or grandparents and their children or grandchildren under the age of 18)</p>
-            <h3 class="book-bold text-green text-decoration-underline">Hours:</h3>
+            <h3 class="book-bold text-green">Hours:</h3>
             <p class="book-italic text-green mb-0">Monday - Saturday:</p>
             <p class="book-bold text-green">9:00<em>am</em> - 4:00<em>pm</em></p>
             <p class="book-italic text-green mb-0">Sunday:</p>
             <p class="book-bold text-green">12:30<em>pm</em> - 4:00<em>pm</em></p>
             <p class="book-italic text-green">Trails open sunrise to sunset!</p>
-            <h4 class="book-bold text-green text-decoration-underline">Rehab Drop-Off:</h4>
+            <h3 class="book-bold text-green">Rehab Drop-Off:</h3>
             <p class="book-italic text-green mb-0">7 days a week:</p>
             <p class="book-bold text-green mb-0">10:00<em>am</em> - 12:00<em>pm</em></p>
             <p class="book-bold text-green">1:00<em>pm</em> - 4:00<em>pm</em></p>
@@ -81,9 +89,9 @@
           </div>
         </aside> <!-- /Left Sidebar -->
         <!-- Main Content -->
-        <div class="col-lg-6 order-1 order-lg-2">
+        <div class="col-lg-6 order-1 order-lg-2 pt-4">
           <!-- Carousel -->
-          <div class="row py-3">
+          <div class="row py-2">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -123,7 +131,7 @@
           <div class="row py-3">
             <p class="font-header text-green fs-2">&#8220;Take only memories and leave only footprints&#8221;</p>
             <p class="book-bold text-green fs-4">Sorry, we do not allow pets &mdash; they scare our wildlife!</p>
-            <h1 class="book-bold text-green text-decoration-underline">Admission:</h1>
+            <h1 class="book-bold text-green">Admission:</h1>
             <p class="book-bold text-green fs-5">$2.50/person or $10/family</p>
             <p class="book-reg text-green fs-5">(family price is for parents and their children under the age of 18 <em class="text-decoration-underline">or</em> grandparents and their grandchildren under the age of 18)</p>
             <p class="book-reg text-green fs-5">Cash or check is preferred, but we can accept credit/debit cards.</p>
@@ -135,40 +143,40 @@
           </div>
         </div> <!-- /Main Content -->
         <!-- Right Sidebar collapses to middle on <= md screens -->
-        <div class="col-lg-3 order-2 order-lg-3 py-3">
+        <div class="col-lg-3 order-2 order-lg-3 py-4">
           <div class="row justify-content-center">
-            <h2 class="font-header text-green text-decoration-underline">Current Events:</h2>
+            <h2 class="font-header text-green dashed-border">Current Events:</h2>
           </div>
-            <div class="row py-3 justify-content-center">
-              <!-- Exhibit Card -->
-              <div class="col-md-6 col-lg-12 pb-2 mb-2">
-                <div class="card bg-green border-0 shadow">
-                  <img src="images/zebraswallowtail-90x91.jpg" class="card-img-top" alt="zebra swallowtail butterfly on a flower">
-                  <div class="card-body">
-                    <h5 class="card-title book-bold text-tan">Summer Art Exhibit:</h5>
-                    <h6 class="card-subtitle mb-2 font-script text-tan">&#8220;The Magic of Spring&#8221;</h6>
-                    <p class="book-italic text-tan">by Nora Steele</p>
-                    <p class="book-reg text-tan"><strong>Runs through Sun., Sept. 18<sup>th</sup></strong></p>
-                    <p class="card-text book-reg text-tan">Nora is a Naturalist for Wahkeena Nature Preserve and uses her illustration and photography to educate about the natural world. Her amazing art will be on sale and ready for pick-up at the end of the show. Proceeds will support the Wildlife Ambassador program at BNC.</p>
-                  </div>
+          <div class="row py-3 justify-content-center">
+            <!-- Exhibit Card -->
+            <div class="col-md-6 col-lg-12 py-3 mb-2">
+              <div class="card bg-green border-0 shadow">
+                <img src="images/zebraswallowtail-90x91.jpg" class="card-img-top" alt="zebra swallowtail butterfly on a flower">
+                <div class="card-body">
+                  <h5 class="card-title book-bold text-tan">Summer Art Exhibit:</h5>
+                  <h6 class="card-subtitle mb-2 font-script text-tan">&#8220;The Magic of Spring&#8221;</h6>
+                  <p class="book-italic text-tan">by Nora Steele</p>
+                  <p class="book-reg text-tan"><strong>Runs through Sun., Sept. 18<sup>th</sup></strong></p>
+                  <p class="card-text book-reg text-tan">Nora is a Naturalist for Wahkeena Nature Preserve and uses her illustration and photography to educate about the natural world. Her amazing art will be on sale and ready for pick-up at the end of the show. Proceeds will support the Wildlife Ambassador program at BNC.</p>
                 </div>
-              </div><!-- /Exhibit Card -->
-              <!-- Shop Card -->
-              <div class="col-md-6 col-lg-12">
-                <div class="card bg-green border-0 shadow">
-                  <img src="images/liliannicholsearrings2-50x59.jpg" class="card-img-top" alt="lilian nichols earrings">
-                  <div class="card-body">
-                    <h5 class="card-title book-bold text-tan">Featured Nature Shop Item:</h5>
-                    <h6 class="card-subtitle mb-2 font-script text-tan">Polymer Clay Jewelry</h6>
-                    <p class="book-italic text-tan">by Lilian Nichols</p>
-                    <p class="card-text book-reg text-tan">The artist of the month is Lilian Nichols, who works with polymer clay to make all sorts of jewelry &mdash; earrings, necklaces and other items.</p>
-                    <p class="card-text book-reg text-tan"> For her, polymer clay is like three dimensional paints &mdash; a perfect combination of her first two loves &mdash; painting and ceramics. Always a nature lover, her art is inspired by colors, forms and patterns found in the natural world, sometimes with a touch of whimsy. She has been working in polymer clay for about thirty years, and also teaches, spreading the fun!</p>
-                    <p class="book-reg text-tan"><strong>Jewelry prices range $15 &mdash; $45</strong></p>
-                    <p class="book-italic text-tan">*A percentage of all sales will be donated back to BNC</p>
-                  </div>
+              </div>
+            </div><!-- /Exhibit Card -->
+            <!-- Shop Card -->
+            <div class="col-md-6 col-lg-12 pt-3">
+              <div class="card bg-green border-0 shadow">
+                <img src="images/liliannicholsearrings2-50x59.jpg" class="card-img-top" alt="lilian nichols earrings">
+                <div class="card-body">
+                  <h5 class="card-title book-bold text-tan">Featured Nature Shop Item:</h5>
+                  <h6 class="card-subtitle mb-2 font-script text-tan">Polymer Clay Jewelry</h6>
+                  <p class="book-italic text-tan">by Lilian Nichols</p>
+                  <p class="card-text book-reg text-tan">The artist of the month is Lilian Nichols, who works with polymer clay to make all sorts of jewelry &mdash; earrings, necklaces and other items.</p>
+                  <p class="card-text book-reg text-tan"> For her, polymer clay is like three dimensional paints &mdash; a perfect combination of her first two loves &mdash; painting and ceramics. Always a nature lover, her art is inspired by colors, forms and patterns found in the natural world, sometimes with a touch of whimsy. She has been working in polymer clay for about thirty years, and also teaches, spreading the fun!</p>
+                  <p class="book-reg text-tan"><strong>Jewelry prices range $15 &mdash; $45</strong></p>
+                  <p class="book-italic text-tan">*A percentage of all sales will be donated back to BNC</p>
                 </div>
-              </div> <!-- /Shop Card -->
-            </div>              
+              </div>
+            </div> <!-- /Shop Card -->
+          </div>              
         </div> <!-- /Right Sidebar-->
       </div>
     </div>
@@ -178,18 +186,18 @@
       <div class="container text-center">
         <ul class="nav justify-content-center py-3">
           <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/BruknerNatureCenter/"><img src="images/facebook.svg" height="24" alt="facebook icon"></a>
+            <a class="nav-link" href="https://www.facebook.com/BruknerNatureCenter/" target="_blank"><img src="images/facebook.svg" height="24" alt="facebook icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/bruknernaturecenter/"><img src="images/instagram.svg" height="24" alt="instagram icon"></a>
+            <a class="nav-link" href="https://www.instagram.com/bruknernaturecenter/" target="_blank"><img src="images/instagram.svg" height="24" alt="instagram icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://youtu.be/PB3kLwRZ0P8"><img src="images/youtube.svg" height="24" alt="instagram icon"></a>
+            <a class="nav-link" href="https://youtu.be/PB3kLwRZ0P8" target="_blank"><img src="images/youtube.svg" height="24" alt="instagram icon"></a>
           </li>
         </ul>
-        <a class="nav-link" href="https://goo.gl/maps/n7mRqRUQbMf74MYV9"><img src="images/geo-alt-fill.svg" height="24" alt="open google maps"></a>
-        <p class="book-reg text-tan pt-2">5995 Horseshoe Bend Rd · Troy, OH · (937) 698-6493 · info@bruknernaturecenter.com</p>
-        <p class="font-script text-tan">Bruckner Nature Center &copy;2022 Design by: Gregory Spain</p>
+        <a class="nav-link" href="https://goo.gl/maps/n7mRqRUQbMf74MYV9" target="_blank"><img src="images/geo-alt-fill.svg" height="24" alt="open google maps"></a>
+        <p class="book-reg text-tan pt-2">5995 Horseshoe Bend Rd · Troy, OH · <a class="text-tan" href="tel:9376986493">(937) 698-6493</a> · <a class="text-tan" href="mailto: info@bruknernaturecenter.com">info@bruknernaturecenter.com</a></p>
+        <p class="font-script text-tan">Brukner Nature Center &copy;2022 Design by: Gregory Spain</p>
       </div>
     </footer> <!-- /Footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
